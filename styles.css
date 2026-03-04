@@ -1464,3 +1464,108 @@ body {
         justify-content: center;
     }
 }
+
+/* ===== ITIC HEADER TOP BAR ===== */
+.itic-header-top {
+    background: var(--primary-dark);
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 70px;
+    box-shadow: 0 2px 12px rgba(92, 92, 138, 0.3);
+}
+.itic-header-logo-link {
+    display: flex; align-items: center; gap: 12px;
+    text-decoration: none; color: white; flex-shrink: 0;
+}
+.itic-header-logo {
+    height: 48px; border-radius: 8px; background: white;
+    padding: 3px 6px; object-fit: contain;
+}
+.itic-header-logo-fb {
+    height: 48px; width: 54px; background: rgba(255,255,255,0.2);
+    border-radius: 8px; display: none; align-items: center;
+    justify-content: center; font-weight: 800; font-size: 16px; color: white;
+}
+.itic-header-logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+.itic-header-logo-name { font-size: 20px; font-weight: 800; color: white; }
+.itic-header-logo-name span { font-weight: 300; opacity: 0.7; }
+.itic-header-logo-tagline { font-size: 9px; color: rgba(255,255,255,0.5); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; }
+.itic-header-title { font-size: 16px; font-weight: 700; color: white; flex: 1; }
+.itic-header-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.itic-btn-campus {
+    padding: 8px 18px; background: #d4820a; border: none; border-radius: 8px;
+    color: white; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: 700;
+    cursor: pointer; transition: all 0.2s; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px;
+}
+.itic-btn-campus:hover { background: #e8950f; transform: translateY(-1px); }
+.itic-header-badge {
+    font-size: 10px; letter-spacing: 0.1em; color: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.12); padding: 4px 10px;
+    border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ===== CONTACT BAR ===== */
+.itic-contact-bar {
+    background: #2d2d4a;
+    padding: 6px 32px;
+    display: flex; align-items: center; justify-content: center;
+    gap: 24px; font-size: 12px;
+    color: rgba(255,255,255,0.6);
+}
+.itic-contact-bar a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; display: inline-flex; align-items: center; gap: 5px; }
+.itic-contact-bar a:hover { color: white; }
+.itic-contact-sep { width: 1px; height: 14px; background: rgba(255,255,255,0.15); }
+
+/* ===== CTA BANNER ===== */
+.itic-cta-banner {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 50%, #d4820a 100%);
+    padding: 40px 32px; text-align: center; color: white;
+}
+.itic-cta-banner h2 { font-size: 26px; font-weight: 800; margin-bottom: 8px; }
+.itic-cta-banner p { font-size: 15px; opacity: 0.85; max-width: 600px; margin: 0 auto 20px; line-height: 1.6; }
+.itic-cta-features { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
+.itic-cta-feature { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; }
+.itic-cta-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.itic-btn-cta-primary {
+    padding: 14px 32px; background: white; border: none; border-radius: 10px;
+    color: var(--primary-dark); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; font-weight: 700;
+    cursor: pointer; transition: all 0.2s; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+}
+.itic-btn-cta-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+.itic-btn-cta-secondary {
+    padding: 14px 28px; background: transparent; border: 2px solid rgba(255,255,255,0.4); border-radius: 10px;
+    color: white; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+}
+.itic-btn-cta-secondary:hover { border-color: white; background: rgba(255,255,255,0.1); }
+
+/* ===== FOOTER ===== */
+.itic-site-footer {
+    background: #111124;
+    padding: 28px 32px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+    color: rgba(255,255,255,0.4); font-size: 12px;
+}
+.itic-footer-brand { display: flex; align-items: center; gap: 10px; }
+.itic-footer-brand img { height: 32px; border-radius: 6px; }
+.itic-footer-brand strong { color: rgba(255,255,255,0.7); font-size: 14px; }
+.itic-footer-links { display: flex; gap: 20px; }
+.itic-footer-links a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+.itic-footer-links a:hover { color: white; }
+
+@media (max-width: 600px) {
+    .itic-header-top { padding: 0 12px; gap: 8px; }
+    .itic-header-logo-text { display: none; }
+    .itic-header-title { font-size: 13px; }
+    .itic-contact-bar { padding: 6px 12px; gap: 12px; font-size: 10px; flex-wrap: wrap; }
+    .itic-contact-sep { display: none; }
+    .itic-cta-banner { padding: 28px 16px; }
+    .itic-cta-banner h2 { font-size: 20px; }
+    .itic-site-footer { flex-direction: column; text-align: center; }
+}
